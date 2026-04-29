@@ -4,11 +4,14 @@
   "description": "OpenCode plugin that intercepts file reads and returns compact code skeletons to reduce token usage by up to 98%",
   "type": "module",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apablosmarcos/opencode-skeleton-pruner.git"
+  },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
