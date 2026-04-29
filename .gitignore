@@ -1,0 +1,25 @@
+# Node / Bun
+node_modules/
+dist/
+.cache/
+
+# Go binary build artifacts
+skeleton/build/
+skeleton/bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local

@@ -1,0 +1,29 @@
+{
+  "name": "opencode-skeleton-pruner",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that intercepts file reads and returns compact code skeletons to reduce token usage by up to 98%",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "dev": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["opencode", "plugin", "skeleton", "context-pruning", "tokens", "llm"],
+  "license": "MIT"
+}
